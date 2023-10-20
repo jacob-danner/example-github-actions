@@ -18,7 +18,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download deno
-        run: curl -fsSL https://deno.land/x/install/install.sh | sh
+        run: | 
+          curl -fsSL https://deno.land/x/install/install.sh | sh
+          export DENO_INSTALL="/home/runner/.deno"
+          export PATH="$DENO_INSTALL/bin:$PATH"
+          echo deno --version
 
 
       # - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
