@@ -12,12 +12,12 @@ Deno.test('rectangle area outputs correct area', () => {
     assertEquals(actualArea, expectedArea)
 })
 
-Deno.test('a test that should fail', () => {
-    const length = 5;
-    const width = 5;
-    const expectedArea = 26;
+// Deno.test('a test that should fail', () => {
+//     const length = 5;
+//     const width = 5;
+//     const expectedArea = 26;
 
-    const actualArea = calculateRectangleArea(length, width);
+//     const actualArea = calculateRectangleArea(length, width);
 
-    assertEquals(actualArea, expectedArea)
-})
+//     assertEquals(actualArea, expectedArea)
+// })
